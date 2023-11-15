@@ -1,0 +1,53 @@
+.newTask {
+    display: flex;
+    gap: 8px;
+    max-width: 736px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(0px - 27px);
+}
+
+.newTask textarea {
+    width: 638px;
+    max-height: 54px;
+    padding: 1rem;
+    resize: none;
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    background: var(--gray-500);
+    color: var(--gray-100);
+
+}
+
+.newTask textarea:focus-within {
+    border: 1px solid var(--purple-dark);
+}
+
+.newTask textarea::placeholder {
+    color: var(--gray-300);
+
+}
+
+.createButton {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: var(--blue-dark);
+    border-radius: 8px;
+    border-style: none;
+    font-size: 0.875rem;
+    color: var(--gray-100);
+    line-height: 1.4;
+    font-weight: 700;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.createButton:hover {
+    background: var(--blue);
+    transition: background-color 0.2s;
+}
+
